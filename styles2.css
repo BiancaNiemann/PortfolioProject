@@ -1,0 +1,695 @@
+* {
+    box-sizing: border-box;
+    background-color: azure;
+}
+
+/*Header*/
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: coral;
+    opacity: 0.6;
+    height: 150px;
+    font-size: 60px;
+    margin: 0px;
+    padding-top: 45px;
+    Font-family: Poppins;  
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 4s steps(30, end);
+}
+
+@keyframes type{
+    from {
+        width: 40px;
+        background-color: turquoise;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    h1 {
+        font-size: 28px;
+        height: 50px;
+        padding-top: 5px;
+    }
+}
+
+/*Navigation Bar*/
+
+.navbar {
+    background-color: black;
+    text-align: center;
+    height: 60px;
+    margin: 0px;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 4px 20px;
+    font-weight: bold;
+    Font-family: Poppins;   
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: rgb(253, 253, 113);
+    border-radius: 20px;
+}
+
+.navlist {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(253, 253, 113);
+}
+
+@media only screen and (max-width: 380px) {
+    .navbar {
+        height: 170px;
+        width: auto;
+    }
+    .navbar li{
+        display: grid;
+        border: 1px solid black;
+        margin-left: 0px;
+        margin-right: 35px;
+    }    
+}
+
+
+/*Main Body*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(11, 10%);
+    grid-template-rows: 400px 400px 400px;
+}
+
+.item {
+    border: 2px solid black;
+    text-align: center;
+}
+
+h3 {
+    font-family: Poppins;
+    background-color: transparent;
+    font-size: 30px ;
+    text-align: center;
+}
+
+h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+.abouttext {
+    font-family: Poppins;
+    font-size: 17px;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+}
+
+.proj {
+    background-color: transparent;
+    font-family: Poppins;
+    font-size: 14px;
+    text-align: center;
+    list-style-type: none;
+
+}
+
+.projectlist {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+summary {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 35px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.proj-img {
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+}
+
+.desc {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.skilllist li{
+    display: inline-block;
+}
+
+.skillimg {
+    width: 200px;
+    height: 200px;
+}
+
+.color-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    background-color: rgba(28, 229, 236, 0.6);
+}
+
+.color-2 {
+    grid-column: 2 / span 5;
+    grid-row: 1;
+}
+
+.color-3 {
+    grid-column: 7 / span 3;
+    grid-row: 1;
+}
+
+.color-4 {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+}
+
+.color-5 {
+    grid-column: 5 / span 5;
+    grid-row: 2;
+}
+
+.color-6 {
+    grid-column: 2 / span 5;
+    grid-row: 3;
+}
+
+.color-7 {
+    grid-column: 7 / span 3;
+    grid-row: 3;
+}
+
+.color-8 {
+    grid-column: 10 / span 1;
+    grid-row: 1 / span 3;
+    background-color: rgba(28, 229, 236, 0.6);
+}
+
+
+@media only screen and (max-width: 380px) {
+    .container {
+        display: grid;
+        grid-template-columns: 40px 280px 40px;
+        grid-template-rows: 350px 280px 280px 280px 280px 280px;
+    }
+    .color-1 {
+        grid-column: 1;
+        grid-row: 1 / span 6;
+    }
+    .color-2 {
+        grid-column: 2; 
+        grid-row: 1;
+    }
+    .color-3 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .color-5 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .color-4 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .color-6 {
+        grid-column: 2;
+        grid-row: 5;
+    }
+    .color-7 {
+        grid-column: 2;
+        grid-row: 6;
+    }
+    .color-8 {
+        grid-column: 3;
+        grid-row: 1 / span 6;
+    }
+    .abouttext {
+        font-size: 0.75rem;
+        width: 280px;
+    }
+    .proj {
+        font-size: 0.5rem;
+    }
+    h3 {
+        width: 280px;
+    }
+    .skillimg {
+        width: 75px;
+        height: 75px;
+        margin-right: 0px;
+    }
+
+}
+
+/*Picture and Quotes boxes*/
+
+.hovimg {
+    cursor:pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-box {
+    background-color: transparent;
+    cursor:pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.flip-box img {
+    width: 100%;
+    height: 100%;
+}
+  
+  .flip-box-inner {
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: black;
+    font-family: Poppins;
+    transform: rotateY(180deg);
+  }
+
+  .inspire {
+    background-color: dodgerblue;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+
+/*Bubble Animation*/
+
+@keyframes bubblesAnimation {
+    0% {
+        margin-top: 1120px;;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes sides {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+
+
+.one {
+    animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    
+    left: 92%;
+    top: 15%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+
+.two {
+    animation: bubblesAnimation 22s linear infinite, sides 2s ease-in-out infinite alternate;
+        
+    left: 90%;
+    top: 5%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+}
+
+.three {
+    animation: bubblesAnimation 24s linear infinite, sides 6s ease-in-out infinite alternate;
+    
+    left: 93.5%;
+    top: 25%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+.four {
+    animation: bubblesAnimation 26s linear infinite, sides 2s ease-in-out infinite alternate;
+    
+    left: 92%;
+    top: 15%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 55px;
+    position: absolute;
+    width: 55px;
+}
+
+.five {
+    animation: bubblesAnimation 28s linear infinite, sides 2s ease-in-out infinite alternate;
+        
+    left: 90%;
+    top: 5%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 65px;
+    position: absolute;
+    width: 65px;
+}
+
+.six {
+    animation: bubblesAnimation 30s linear infinite, sides 6s ease-in-out infinite alternate;
+    
+    left: 93.5%;
+    top: 25%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+.seven {
+    animation: bubblesAnimation 21s linear infinite, sides 6s ease-in-out infinite alternate;
+    
+    left: 93.5%;
+    top: 25%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+.eight {
+    animation: bubblesAnimation 23s linear infinite, sides 2s ease-in-out infinite alternate;
+    
+    left: 92%;
+    top: 15%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 55px;
+    position: absolute;
+    width: 55px;
+}
+
+.nine {
+    animation: bubblesAnimation 25s linear infinite, sides 2s ease-in-out infinite alternate;
+        
+    left: 90%;
+    top: 5%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 65px;
+    position: absolute;
+    width: 65px;
+}
+
+.ten {
+    animation: bubblesAnimation 27s linear infinite, sides 6s ease-in-out infinite alternate;
+    
+    left: 93.5%;
+    top: 25%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+
+.eleven {
+    animation: bubblesAnimation 20s linear infinite, sides 2s ease-in-out infinite alternate;
+    
+    left: 2%;
+    top: 15%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+
+.twelve {
+    animation: bubblesAnimation 22s linear infinite, sides 2s ease-in-out infinite alternate;
+        
+    left: 3%;
+    top: 5%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+}
+
+.thirteen {
+    animation: bubblesAnimation 24s linear infinite, sides 6s ease-in-out infinite alternate;
+    
+    left: 2.5%;
+    top: 25%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+.fourteen {
+    animation: bubblesAnimation 26s linear infinite, sides 2s ease-in-out infinite alternate;
+    
+    left: 2.5%;
+    top: 15%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 55px;
+    position: absolute;
+    width: 55px;
+}
+
+.fifteen {
+    animation: bubblesAnimation 28s linear infinite, sides 2s ease-in-out infinite alternate;
+        
+    left: 3%;
+    top: 5%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 65px;
+    position: absolute;
+    width: 65px;
+}
+
+.sixteen {
+    animation: bubblesAnimation 30s linear infinite, sides 6s ease-in-out infinite alternate;
+    
+    left: 2%;
+    top: 25%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+.seventeen {
+    animation: bubblesAnimation 21s linear infinite, sides 6s ease-in-out infinite alternate;
+    
+    left: 3%;
+    top: 25%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+.eighteen {
+    animation: bubblesAnimation 23s linear infinite, sides 2s ease-in-out infinite alternate;
+    
+    left: 2.5%;
+    top: 15%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 55px;
+    position: absolute;
+    width: 55px;
+}
+
+.nineteen {
+    animation: bubblesAnimation 25s linear infinite, sides 2s ease-in-out infinite alternate;
+        
+    left: 2%;
+    top: 5%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 65px;
+    position: absolute;
+    width: 65px;
+}
+
+.twenty {
+    animation: bubblesAnimation 27s linear infinite, sides 6s ease-in-out infinite alternate;
+    
+    left: 3%;
+    top: 25%;
+    
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), inset 0px 10px 30px 5px rgb(165, 165, 250) ;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+/*footer*/
+
+footer {
+    height: 100px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.digitalclock {
+    background-color: transparent;
+    color: coral;
+    font-size: 70px;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 380px) {
+    .digitalclock {
+        font-size: 60px;
+        letter-spacing: 4px;
+    }
+}
+
+/*Contact Page*/
+
+.contactlist {
+    list-style-type: none;    
+    font-family: Poppins;
+    font-size: 16px;
+
+}
+
+.contactimg {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border: 3px solid darkgray;
+    border-radius: 10px;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 560px;
+}
+
+.sectionone {
+    border: 1px solid black;
+    padding-left: 150px;
+}
+
+.sectiontwo {
+    border: 1px solid black;
+    font-family: Poppins;
+}
+
+.overlay {
+    background-color: aqua;
+}
+
+form {
+    text-align: center;
+    line-height: 25px;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 380px) {
+    .sectionone {
+        padding-left: 0px;
+    }
+    .contactlist {
+        font-size: 10px;
+    }
+    .sections {
+        grid-template-rows: 700px;
+    }
+}
+
+/*Submit Form*/
+
+#logo {
+    height: 450px;
+    width: 450px;
+    margin-left: 450px;
+    background-color: aqua;
+}
+
+@media only screen and (max-width: 380px) {
+    #logo {
+        margin-left: 5px;
+        height: 350px;
+        width: 350px;
+    }
+}
+
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Bianca Niemann Contact</title>
+</head>
+
+  <!--Navigation Bar-->
+
+<body>
+    <nav>
+        <ul class="navbar" name="top">
+            <li><a href="index.html" class="navlist" id="top">Home Page</a></li>
+            <li><a href="Contact.html" class="navlist" id="top">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="sections">
+
+  <!--Left Side Bar-->
+
+    <div class="sectionone">
+        <ul class="contactlist">
+            <li>
+                <img class="contactimg" src="Images/contact/phone.JPG" alt="phone icon"> +00 0000 000 0000
+            </li>
+            <li>
+                <img class="contactimg" src="Images/contact/email.JPG" alt="email icon"> testemail@gmail.com
+            </li>
+            <li>
+                <img class="contactimg" src="Images/contact/www.JPG" alt="www icon"> www.justtotest.com
+            </li>
+            <li>
+                <img class="contactimg" src="Images/contact/facebook.JPG" alt="facebook icon"> facebookid/123456
+            </li>
+            <li>
+                <img class="contactimg" src="Images/contact/instagram.JPG" alt="instagram icon"> https://www.instagram.com/justatest/ 
+            </li>
+        </ul> 
+    </div>  
+
+  <!--Right Side Bar-->
+
+    <div class="sectiontwo">
+        <form action="submit.html" method="post">
+            <h2>Contact Us!</h2>
+            <input type="text" placeholder="Enter your Surname" id="lastName" / required>
+                <br>
+                <br>
+                <input type="text" placeholder="Enter your First name" id="firstName" / required>
+                <br>
+                <br>
+                <input type="email" placeholder="Enter your Email Address" id="email" />
+                <br>
+                <br>
+                <span>Have your say below!</span>
+                <br>
+                <textarea id="question" rows="4"></textarea>
+                <br>
+                <br>
+                <p>Rate my Website!</p>
+                <label for = "excellent" >Excellent</label>
+                <input id = "excellent" name = "rating" type="radio" value="excellent">
+                <br>
+                <label for = "average" >Average</label>
+                <input id = "average" name = "rating" type="radio" value="average">
+                <br>
+                <label for = "needswork" >Needs Work</label>
+                <input id = "needswork" name = "rating" type="radio" value="needswork">
+                <br>
+                <br>
+                <section class="submit">
+                    <input type="submit" value="Submit">
+                </section>
+        </form>
+    </div>
+    </div>
+   
+</body>
+
+
+
+
