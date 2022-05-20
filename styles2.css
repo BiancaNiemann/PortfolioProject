@@ -135,6 +135,14 @@ summary {
     text-align: center;
 }
 
+.scroller {
+  width: 600px;
+  height: 200px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
 .proj-img {
     height: 100px;
     width: 100px;
